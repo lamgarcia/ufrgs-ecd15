@@ -158,7 +158,7 @@ flowchart TD
     end
     
 
-    subgraph Drift run_simulation_drift.py
+    subgraph Drift [run_simulation_drift.py]
         B1[[🧪Simular Inferências<br>src/simulation/simulation.py]]
         B2[[🔍Monitorar Drift<br>src/monitor/monitor_drift.py]]
         B3[🎯Trigger de Retreinamento<br>src/triggers/retraining_trigger.py]
@@ -195,7 +195,7 @@ No Pipeline foram utilizadas as seguintes Ferramentas:
 - Disponibilização do Modelo via API: MLFlow
 - Monitoramento de Drifts: Evidently AI
 - Log das etapas da execução: Logging
-- Controle de versão do código: GitLab:  para versionamento e armazenamento dos artefatos no treinamento do modelo (experimentos).  
+- Controle de versão do código: GitLab  
 
 ## 🤖Modelos, Resultados e Métricas
  
