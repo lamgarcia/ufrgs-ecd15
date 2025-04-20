@@ -1,4 +1,12 @@
-# 📦Dataset
+
+# MLOPS - Classificação de Crédito
+
+Projeto de trabalho final realizado pelo aluno Luiz A. M. Garcia dentro da disciplina ECD15 de MLOPS.
+
+O código do projeto está em https://github.com/lamgarcia/ufrgs-ecd15
+
+
+## 📦Dataset
 
 O dataset escolhido é de  **Classificação de Crédito** de cliente para compra de bens. O rótulo é **Status** e tem o valor *good* (bom crédito) e *bad* (mau crédito).
 
@@ -56,7 +64,7 @@ Pode ser baixado diretamente do link: https://vincentarelbundock.github.io/Rdata
 | max   | 4454     | 48        | 72    | 68    | 180      | 959    | 300000  | 30000   | 5000    | 11140   |
 
 
-# 📁 Estrutura do projeto
+## 📁 Estrutura do projeto
 
 ```bash
 ├── README.md                  # documentação do projeto
@@ -100,7 +108,7 @@ Pode ser baixado diretamente do link: https://vincentarelbundock.github.io/Rdata
 
 
 
-# 📝Arquivo de configuração (config_pipeline.json)
+## 📝Arquivo de configuração (config_pipeline.json)
 
 Arquivo **config_pipeline.json** é um arquivo de configuração utilizado por vários códigos do modelo. Facilita alteração e parâmetros para  execução do pipeline e permite maior flexibilidade sem alterar os códigos.  Através dele é possível definir a acurácia do dataset da simulação para que possa ser disparado o trigger de re-treinamento em caso de drift superior. 
 
@@ -136,8 +144,8 @@ config_pipeline.json:
    }
 }
 ```
-adfasfdas
-# 🔄Pipeline
+
+## 🔄Pipeline
 ```mermaid
 flowchart TD
 
@@ -178,7 +186,7 @@ flowchart TD
     D3 --> B3
 
 ```
-# 🛠️Ferramentas 
+## 🛠️Ferramentas 
 
 
 No Pipeline foram utilizadas as seguintes Ferramentas:
@@ -187,15 +195,67 @@ No Pipeline foram utilizadas as seguintes Ferramentas:
 - Disponibilização do Modelo via API: MLFlow
 - Monitoramento de Drifts: Evidently AI
 - Log das etapas da execução: Logging
-- Controle de versão do código: GitLab:  para versionamento e armazenamento dos artefatos no treinamento do modelo (experimentos). 
+- Controle de versão do código: GitLab:  para versionamento e armazenamento dos artefatos no treinamento do modelo (experimentos).  
 
-# 🤖Modelos, Resultados e Métricas
+## 🤖Modelos, Resultados e Métricas
+ 
+Como é um problema de classificação de crédito, foram utilizados os modelos Random Forest, XGBoost e Logistic Regression com parâmetros diversos para avaliação. Abaixo os F-Scores de uma execução de treinamento.
 
+|                                                                              |                    |
+| ---------------------------------------------------------------------------- | ------------------ |
+| **Modelo e parâmetros**                                                      | **f1-score**       |
+| RandomForest_{'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 10} | 0.859896219421794  |
+| RandomForest_{'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2}  | 0.8584202682563339 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.2}          | 0.8564885496183207 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 10}  | 0.8558692421991084 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 10}  | 0.8552036199095022 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1}          | 0.8551829268292683 |
+| LogisticRegression_{'C': 3.0, 'penalty': 'l2', 'solver': 'lbfgs'}            | 0.8550404709345106 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.2}          | 0.8549382716049383 |
+| LogisticRegression_{'C': 0.1, 'penalty': 'l2', 'solver': 'lbfgs'}            | 0.8548148148148148 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 5}  | 0.8537666174298375 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 2}   | 0.85331347728965   |
+| RandomForest_{'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 10}  | 0.8530734632683659 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 2}  | 0.8526315789473684 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 5}   | 0.8522130532633159 |
+| LogisticRegression_{'C': 2.0, 'penalty': 'l2', 'solver': 'lbfgs'}            | 0.8518242740134029 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.2}          | 0.8516228748068007 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 10} | 0.8513513513513513 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.1}          | 0.8509984639016898 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 5}  | 0.8507126781695424 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.1}          | 0.850609756097561  |
+| LogisticRegression_{'C': 1.0, 'penalty': 'l2', 'solver': 'lbfgs'}            | 0.8505917159763313 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.1}          | 0.8503453568687643 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 5}  | 0.8502994011976048 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.1}          | 0.8498845265588915 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 10} | 0.8489857250187829 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 5}   | 0.8489425981873112 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 5}   | 0.8489314664701547 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.2}          | 0.8488104374520338 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.3}          | 0.8485780169100692 |
+| LogisticRegression_{'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}           | 0.8481291269258987 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.3}          | 0.847457627118644  |
+| XGBoost_{'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.2}         | 0.8472755180353031 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.1}          | 0.8465690053970701 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 2}   | 0.8457486832204665 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.3}          | 0.8457405986185725 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.2}          | 0.8457405986185725 |
+| RandomForest_{'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 2}  | 0.8456883509833586 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.1}         | 0.8453292496171516 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.3}          | 0.8450920245398773 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.1}         | 0.8448540706605223 |
+| RandomForest_{'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 2}   | 0.8444108761329305 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.2}         | 0.8440366972477065 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.3}         | 0.8437259430331023 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.3}         | 0.8433179723502304 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.3}          | 0.8433179723502304 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.2}          | 0.8428351309707242 |
+| XGBoost_{'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.2}         | 0.8421052631578947 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.3}         | 0.8417818740399385 |
+| XGBoost_{'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.3}          | 0.8413793103448276 |
+| XGBoost_{'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.1}         | 0.8407350689127105 |
 
-Como é um problema de classificação de crédito, foram utilizados os modelos Random Forest, XGBoost e Logistic Regression com parâmetros diversos para avaliação
-
-
-# 🚀Execução do Pipeline
+## 🚀Execução do Pipeline
 
 ##### Clonar o projeto
 O projeto foi executado em ambiente Windows, pode ser necessário ajustes para Linux ou Mac.
@@ -223,4 +283,17 @@ python run_simulation_drift.py
 ```
 
 
-# ✅Considerações 
+## ✅Considerações 
+
+Neste trabalho foi implementado um Pipeline de MLOPS completo: 
+- treinamento
+- versionamento
+- armazenamento de modelo
+- avaliação dos modelos
+- promoção do campeão em f1-score
+- implantação do modelo vencedor  via API
+- armazenamento das inferências do modelo em produção
+- monitoramento de drift
+- trigger para retreinamento em caso de drifts. 
+
+Também foi utilizado arquivo de configuração global para facilitar a execução do pipeline com outros parâmetros e log das execuções em arquivo específico para consulta posterior.
