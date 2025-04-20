@@ -1,0 +1,27 @@
+{
+   "mlflow":{
+      "mlflow_uri":"sqlite:///mlflow.db",
+      "mlflow_experiment":"CreditData_Experiments"
+   },
+   "files":{
+      "dataset":"data/raw/credit_data.csv",
+      "datadrift_html":"reports/report_datadrift.html",
+      "datadrift_json":"reports/report_datadrift.json",
+      "classdrift_html":"reports/report_classdrift.html",
+      "classdrift_json":"reports/report_classdrift.json",
+      "inferences_log":"data/inferences/credit_data_inferences_log.csv",
+      "runs_log":"runs/runs.log"
+   },
+   "experiments":{
+      "staging_threshold":0.70
+   },
+   "drift":{
+      "min_f1_score":0.65,
+      "min_data_share":1,
+      "code_retraining":"run_training_serving.py"
+   },
+   "simulation":{
+       "acuracia":0.5,
+       "amostras":2000
+   }
+}

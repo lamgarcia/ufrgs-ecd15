@@ -1,0 +1,320 @@
+2025-04-19 13:57:56,480 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 13:57:56,480 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 13:57:56,532 -  INFO - credit_model_experiments.py - Pre-processamento do dataset data/raw/credit_data.csv
+2025-04-19 13:57:56,542 -  INFO - credit_model_experiments.py - Estrutura do dataset:
+2025-04-19 13:57:56,542 -  INFO - credit_model_experiments.py -   Coluna: Status, Tipo: float64
+2025-04-19 13:57:56,543 -  INFO - credit_model_experiments.py -   Coluna: Seniority, Tipo: float64
+2025-04-19 13:57:56,543 -  INFO - credit_model_experiments.py -   Coluna: Home, Tipo: float64
+2025-04-19 13:57:56,544 -  INFO - credit_model_experiments.py -   Coluna: Time, Tipo: float64
+2025-04-19 13:57:56,545 -  INFO - credit_model_experiments.py -   Coluna: Age, Tipo: float64
+2025-04-19 13:57:56,545 -  INFO - credit_model_experiments.py -   Coluna: Marital, Tipo: float64
+2025-04-19 13:57:56,545 -  INFO - credit_model_experiments.py -   Coluna: Records, Tipo: float64
+2025-04-19 13:57:56,546 -  INFO - credit_model_experiments.py -   Coluna: Job, Tipo: float64
+2025-04-19 13:57:56,546 -  INFO - credit_model_experiments.py -   Coluna: Expenses, Tipo: float64
+2025-04-19 13:57:56,547 -  INFO - credit_model_experiments.py -   Coluna: Income, Tipo: float64
+2025-04-19 13:57:56,547 -  INFO - credit_model_experiments.py -   Coluna: Assets, Tipo: float64
+2025-04-19 13:57:56,547 -  INFO - credit_model_experiments.py -   Coluna: Debt, Tipo: float64
+2025-04-19 13:57:56,548 -  INFO - credit_model_experiments.py -   Coluna: Amount, Tipo: float64
+2025-04-19 13:57:56,548 -  INFO - credit_model_experiments.py -   Coluna: Price, Tipo: float64
+2025-04-19 13:57:56,787 -  INFO - credit_model_experiments.py - Iniciando treinameto dos modelos
+2025-04-19 13:58:07,627 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 13:58:14,987 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 0.1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 13:58:30,261 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 1.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 13:58:43,124 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 2.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 13:58:52,621 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 3.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 13:59:01,151 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 2}
+2025-04-19 13:59:09,049 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 5}
+2025-04-19 13:59:16,611 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 10}
+2025-04-19 13:59:25,296 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 2}
+2025-04-19 13:59:35,645 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 5}
+2025-04-19 13:59:53,800 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 10}
+2025-04-19 14:00:03,007 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 2}
+2025-04-19 14:00:12,320 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 5}
+2025-04-19 14:00:19,823 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 10}
+2025-04-19 14:00:28,696 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2}
+2025-04-19 14:00:37,464 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 5}
+2025-04-19 14:00:46,161 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 10}
+2025-04-19 14:00:52,928 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 2}
+2025-04-19 14:01:00,533 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 5}
+2025-04-19 14:01:10,861 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 10}
+2025-04-19 14:01:18,332 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 2}
+2025-04-19 14:01:25,384 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 5}
+2025-04-19 14:01:32,842 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 10}
+2025-04-19 14:01:39,719 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:01:47,521 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:01:53,552 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:02:00,222 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:02:06,797 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:02:14,450 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:02:20,896 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:02:28,207 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:02:34,996 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:02:42,906 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:02:49,768 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:02:56,380 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:03:04,046 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:03:12,444 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:03:23,073 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:03:30,871 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:03:37,962 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:03:46,393 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:03:53,699 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:04:00,661 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:04:07,840 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:04:16,131 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:04:23,498 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:04:30,554 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:04:37,256 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:04:45,250 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:04:53,003 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:04:57,635 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 14:04:57,636 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 14:04:57,661 -  INFO - credit_model_promote.py - Iniciando promoção do modelo campeão. F1-score mínimo para ir para Staging (staging Threshold): 0.7
+2025-04-19 14:04:57,742 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 18 com F1-score 0.8513513513513513 movido para Staging.
+2025-04-19 14:04:57,760 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 17 com F1-score 0.8507126781695424 movido para Staging.
+2025-04-19 14:04:57,781 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 16 com F1-score 0.8456883509833586 movido para Staging.
+2025-04-19 14:04:57,800 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 15 com F1-score 0.8489857250187829 movido para Staging.
+2025-04-19 14:04:57,822 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 14 com F1-score 0.8502994011976048 movido para Staging.
+2025-04-19 14:04:57,843 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 13 com F1-score 0.8526315789473684 movido para Staging.
+2025-04-19 14:04:57,868 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 12 com F1-score 0.859896219421794 movido para Staging.
+2025-04-19 14:04:57,887 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 11 com F1-score 0.8537666174298375 movido para Staging.
+2025-04-19 14:04:57,909 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 10 com F1-score 0.8584202682563339 movido para Staging.
+2025-04-19 14:04:57,928 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 9 com F1-score 0.8552036199095022 movido para Staging.
+2025-04-19 14:04:57,951 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 8 com F1-score 0.8489425981873112 movido para Staging.
+2025-04-19 14:04:57,973 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 7 com F1-score 0.8444108761329305 movido para Staging.
+2025-04-19 14:04:57,997 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 6 com F1-score 0.8530734632683659 movido para Staging.
+2025-04-19 14:04:58,020 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 5 com F1-score 0.8522130532633159 movido para Staging.
+2025-04-19 14:04:58,045 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 4 com F1-score 0.8457486832204665 movido para Staging.
+2025-04-19 14:04:58,094 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 3 com F1-score 0.8558692421991084 movido para Staging.
+2025-04-19 14:04:58,137 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 2 com F1-score 0.8489314664701547 movido para Staging.
+2025-04-19 14:04:58,167 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 1 com F1-score 0.85331347728965 movido para Staging.
+2025-04-19 14:04:58,201 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 27 com F1-score 0.8417818740399385 movido para Staging.
+2025-04-19 14:04:58,242 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 26 com F1-score 0.8472755180353031 movido para Staging.
+2025-04-19 14:04:58,262 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 25 com F1-score 0.8407350689127105 movido para Staging.
+2025-04-19 14:04:58,286 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 24 com F1-score 0.8485780169100692 movido para Staging.
+2025-04-19 14:04:58,310 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 23 com F1-score 0.8516228748068007 movido para Staging.
+2025-04-19 14:04:58,331 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 22 com F1-score 0.8465690053970701 movido para Staging.
+2025-04-19 14:04:58,355 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 21 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:04:58,378 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 20 com F1-score 0.8428351309707242 movido para Staging.
+2025-04-19 14:04:58,399 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 19 com F1-score 0.8503453568687643 movido para Staging.
+2025-04-19 14:04:58,420 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 18 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:04:58,446 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 17 com F1-score 0.8440366972477065 movido para Staging.
+2025-04-19 14:04:58,467 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 16 com F1-score 0.8448540706605223 movido para Staging.
+2025-04-19 14:04:58,492 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 15 com F1-score 0.847457627118644 movido para Staging.
+2025-04-19 14:04:58,517 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 14 com F1-score 0.8549382716049383 movido para Staging.
+2025-04-19 14:04:58,542 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 13 com F1-score 0.8498845265588915 movido para Staging.
+2025-04-19 14:04:58,563 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 12 com F1-score 0.8413793103448276 movido para Staging.
+2025-04-19 14:04:58,586 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 11 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:04:58,608 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 10 com F1-score 0.8509984639016898 movido para Staging.
+2025-04-19 14:04:58,630 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 9 com F1-score 0.8437259430331023 movido para Staging.
+2025-04-19 14:04:58,652 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 8 com F1-score 0.8421052631578947 movido para Staging.
+2025-04-19 14:04:58,675 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 7 com F1-score 0.8453292496171516 movido para Staging.
+2025-04-19 14:04:58,695 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 6 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:04:58,719 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 5 com F1-score 0.8488104374520338 movido para Staging.
+2025-04-19 14:04:58,747 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 4 com F1-score 0.850609756097561 movido para Staging.
+2025-04-19 14:04:58,774 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 3 com F1-score 0.8450920245398773 movido para Staging.
+2025-04-19 14:04:58,854 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 2 com F1-score 0.8564885496183207 movido para Staging.
+2025-04-19 14:04:58,897 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 1 com F1-score 0.8551829268292683 movido para Staging.
+2025-04-19 14:04:58,939 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 5 com F1-score 0.8550404709345106 movido para Staging.
+2025-04-19 14:04:58,966 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 4 com F1-score 0.8518242740134029 movido para Staging.
+2025-04-19 14:04:58,996 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 3 com F1-score 0.8505917159763313 movido para Staging.
+2025-04-19 14:04:59,030 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 2 com F1-score 0.8548148148148148 movido para Staging.
+2025-04-19 14:04:59,059 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 1 com F1-score 0.8481291269258987 movido para Staging.
+2025-04-19 14:04:59,077 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 12 agora é o campeão com F1-score de 0.859896219421794.
+2025-04-19 14:05:03,192 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 14:05:03,193 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 14:05:03,287 -  INFO - credit_model_serve.py - Modelo 'CreditCard_RandomForest' em produção encontrado no experimento 'CreditData_Experiments' (versão 12)
+2025-04-19 14:05:03,288 -  INFO - credit_model_serve.py - Modelo servido em http://127.0.0.1:8000/invocations
+2025-04-19 14:06:24,470 -  INFO - simulation.py - Iniciando uma simulação usando a API para criar uma dataset de inferências.
+2025-04-19 14:07:00,281 -  INFO - simulation.py - Dataset terá 2000 amostras e acurácia de 0.5
+2025-04-19 14:07:00,306 -  INFO - simulation.py - Dataset de simulação da API salvo em: data/inferences/credit_data_inferences_log.csv
+2025-04-19 14:07:05,859 -  INFO - monitor_drift.py - Iniciando monitoramento de drifts
+2025-04-19 14:07:05,859 -  INFO - monitor_drift.py - Dataset de treinamento: data/raw/credit_data.csv
+2025-04-19 14:07:05,860 -  INFO - monitor_drift.py - Dataset de inferencias: data/inferences/credit_data_inferences_log.csv
+2025-04-19 14:07:07,142 -  INFO - monitor_drift.py - Salvo relatórios de DataDrift: reports/report_datadrift.html , reports/report_datadrift.json
+2025-04-19 14:07:07,419 -  INFO - monitor_drift.py - Salvo relatórios de ClassDrift: reports/report_classdrift.html, reports/report_classdrift.json
+2025-04-19 14:07:07,963 -  INFO - retraining_trigger.py - Iniciando verificação de trigger para retreinamento do modelo
+2025-04-19 14:07:07,965 -  INFO - retraining_trigger.py - Mínimo F1-Score: 0.65 e Mínimo Data-share de colunas: 1
+2025-04-19 14:07:07,965 -  INFO - retraining_trigger.py - Json para datadrift: reports/report_datadrift.json
+2025-04-19 14:07:07,965 -  INFO - retraining_trigger.py - Json para classdrift: reports/report_classdrift.json
+2025-04-19 14:07:07,966 -  INFO - retraining_trigger.py - Drift de classificação Detectado. F1 corrente (0.5318847425602268) menor que o mínimo (0.65)
+2025-04-19 14:07:07,967 -  INFO - retraining_trigger.py - Nenhum drift de dados detectado.
+2025-04-19 14:07:07,967 -  INFO - retraining_trigger.py - Modelo eficiente.  Share of drifted columns (1.0) menor que o mínimo drift_share definido (1)
+2025-04-19 14:07:07,968 -  INFO - retraining_trigger.py - Iniciando o retreinamento do modelo: python run_training_serving.py
+2025-04-19 14:07:13,731 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 14:07:13,732 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 14:07:13,786 -  INFO - credit_model_experiments.py - Pre-processamento do dataset data/raw/credit_data.csv
+2025-04-19 14:07:13,798 -  INFO - credit_model_experiments.py - Estrutura do dataset:
+2025-04-19 14:07:13,798 -  INFO - credit_model_experiments.py -   Coluna: Status, Tipo: float64
+2025-04-19 14:07:13,799 -  INFO - credit_model_experiments.py -   Coluna: Seniority, Tipo: float64
+2025-04-19 14:07:13,800 -  INFO - credit_model_experiments.py -   Coluna: Home, Tipo: float64
+2025-04-19 14:07:13,802 -  INFO - credit_model_experiments.py -   Coluna: Time, Tipo: float64
+2025-04-19 14:07:13,803 -  INFO - credit_model_experiments.py -   Coluna: Age, Tipo: float64
+2025-04-19 14:07:13,804 -  INFO - credit_model_experiments.py -   Coluna: Marital, Tipo: float64
+2025-04-19 14:07:13,804 -  INFO - credit_model_experiments.py -   Coluna: Records, Tipo: float64
+2025-04-19 14:07:13,805 -  INFO - credit_model_experiments.py -   Coluna: Job, Tipo: float64
+2025-04-19 14:07:13,805 -  INFO - credit_model_experiments.py -   Coluna: Expenses, Tipo: float64
+2025-04-19 14:07:13,806 -  INFO - credit_model_experiments.py -   Coluna: Income, Tipo: float64
+2025-04-19 14:07:13,806 -  INFO - credit_model_experiments.py -   Coluna: Assets, Tipo: float64
+2025-04-19 14:07:13,807 -  INFO - credit_model_experiments.py -   Coluna: Debt, Tipo: float64
+2025-04-19 14:07:13,808 -  INFO - credit_model_experiments.py -   Coluna: Amount, Tipo: float64
+2025-04-19 14:07:13,808 -  INFO - credit_model_experiments.py -   Coluna: Price, Tipo: float64
+2025-04-19 14:07:14,123 -  INFO - credit_model_experiments.py - Iniciando treinameto dos modelos
+2025-04-19 14:07:34,721 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 14:07:43,926 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 0.1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 14:07:53,492 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 1.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 14:08:02,593 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 2.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 14:08:10,928 -  INFO - credit_model_experiments.py - Modelo: LogisticRegression, Parâmetros: {'C': 3.0, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-19 14:08:16,720 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 2}
+2025-04-19 14:08:22,952 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 5}
+2025-04-19 14:08:28,797 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 10, 'min_samples_split': 10}
+2025-04-19 14:08:36,935 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 2}
+2025-04-19 14:08:46,076 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 5}
+2025-04-19 14:08:55,393 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 20, 'min_samples_split': 10}
+2025-04-19 14:09:08,692 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 2}
+2025-04-19 14:09:16,580 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 5}
+2025-04-19 14:09:22,114 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 50, 'max_depth': 30, 'min_samples_split': 10}
+2025-04-19 14:09:27,960 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 2}
+2025-04-19 14:09:35,018 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 5}
+2025-04-19 14:09:42,098 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 10, 'min_samples_split': 10}
+2025-04-19 14:09:50,248 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 2}
+2025-04-19 14:09:58,931 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 5}
+2025-04-19 14:10:05,235 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 20, 'min_samples_split': 10}
+2025-04-19 14:10:11,406 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 2}
+2025-04-19 14:10:17,870 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 5}
+2025-04-19 14:10:24,670 -  INFO - credit_model_experiments.py - Modelo: RandomForest, Parâmetros: {'n_estimators': 100, 'max_depth': 30, 'min_samples_split': 10}
+2025-04-19 14:10:31,434 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:10:38,411 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:10:45,711 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:10:55,815 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:11:10,588 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:11:17,430 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:11:23,461 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:11:30,529 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:11:38,282 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:11:45,596 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:11:52,951 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:11:59,528 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:12:06,337 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:12:13,042 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:12:19,424 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:12:26,031 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:12:34,751 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:12:42,303 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 150, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:12:49,653 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.1}
+2025-04-19 14:12:56,741 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.2}
+2025-04-19 14:13:02,561 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.3}
+2025-04-19 14:13:08,888 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.1}
+2025-04-19 14:13:14,675 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.2}
+2025-04-19 14:13:20,417 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 9, 'learning_rate': 0.3}
+2025-04-19 14:13:27,314 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.1}
+2025-04-19 14:13:35,395 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.2}
+2025-04-19 14:13:42,778 -  INFO - credit_model_experiments.py - Modelo: XGBoost, Parâmetros: {'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.3}
+2025-04-19 14:13:47,385 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 14:13:47,385 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 14:13:47,408 -  INFO - credit_model_promote.py - Iniciando promoção do modelo campeão. F1-score mínimo para ir para Staging (staging Threshold): 0.7
+2025-04-19 14:13:47,486 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 36 com F1-score 0.8513513513513513 movido para Staging.
+2025-04-19 14:13:47,506 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 35 com F1-score 0.8507126781695424 movido para Staging.
+2025-04-19 14:13:47,525 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 34 com F1-score 0.8456883509833586 movido para Staging.
+2025-04-19 14:13:47,546 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 33 com F1-score 0.8489857250187829 movido para Staging.
+2025-04-19 14:13:47,565 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 32 com F1-score 0.8502994011976048 movido para Staging.
+2025-04-19 14:13:47,585 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 31 com F1-score 0.8526315789473684 movido para Staging.
+2025-04-19 14:13:47,604 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 30 com F1-score 0.859896219421794 movido para Staging.
+2025-04-19 14:13:47,623 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 29 com F1-score 0.8537666174298375 movido para Staging.
+2025-04-19 14:13:47,645 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 28 com F1-score 0.8584202682563339 movido para Staging.
+2025-04-19 14:13:47,664 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 27 com F1-score 0.8552036199095022 movido para Staging.
+2025-04-19 14:13:47,684 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 26 com F1-score 0.8489425981873112 movido para Staging.
+2025-04-19 14:13:47,704 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 25 com F1-score 0.8444108761329305 movido para Staging.
+2025-04-19 14:13:47,724 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 24 com F1-score 0.8530734632683659 movido para Staging.
+2025-04-19 14:13:47,744 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 23 com F1-score 0.8522130532633159 movido para Staging.
+2025-04-19 14:13:47,762 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 22 com F1-score 0.8457486832204665 movido para Staging.
+2025-04-19 14:13:47,781 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 21 com F1-score 0.8558692421991084 movido para Staging.
+2025-04-19 14:13:47,800 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 20 com F1-score 0.8489314664701547 movido para Staging.
+2025-04-19 14:13:47,821 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 19 com F1-score 0.85331347728965 movido para Staging.
+2025-04-19 14:13:47,839 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 12 com F1-score 0.859896219421794 movido para Staging.
+2025-04-19 14:13:47,859 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 1 com F1-score 0.85331347728965 movido para Staging.
+2025-04-19 14:13:47,879 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 2 com F1-score 0.8489314664701547 movido para Staging.
+2025-04-19 14:13:47,898 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 3 com F1-score 0.8558692421991084 movido para Staging.
+2025-04-19 14:13:47,917 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 4 com F1-score 0.8457486832204665 movido para Staging.
+2025-04-19 14:13:47,935 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 5 com F1-score 0.8522130532633159 movido para Staging.
+2025-04-19 14:13:47,953 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 6 com F1-score 0.8530734632683659 movido para Staging.
+2025-04-19 14:13:47,971 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 7 com F1-score 0.8444108761329305 movido para Staging.
+2025-04-19 14:13:47,990 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 8 com F1-score 0.8489425981873112 movido para Staging.
+2025-04-19 14:13:48,009 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 9 com F1-score 0.8552036199095022 movido para Staging.
+2025-04-19 14:13:48,027 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 10 com F1-score 0.8584202682563339 movido para Staging.
+2025-04-19 14:13:48,045 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 11 com F1-score 0.8537666174298375 movido para Staging.
+2025-04-19 14:13:48,064 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 13 com F1-score 0.8526315789473684 movido para Staging.
+2025-04-19 14:13:48,082 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 14 com F1-score 0.8502994011976048 movido para Staging.
+2025-04-19 14:13:48,101 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 15 com F1-score 0.8489857250187829 movido para Staging.
+2025-04-19 14:13:48,120 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 16 com F1-score 0.8456883509833586 movido para Staging.
+2025-04-19 14:13:48,139 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 17 com F1-score 0.8507126781695424 movido para Staging.
+2025-04-19 14:13:48,158 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 18 com F1-score 0.8513513513513513 movido para Staging.
+2025-04-19 14:13:48,186 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 54 com F1-score 0.8417818740399385 movido para Staging.
+2025-04-19 14:13:48,205 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 53 com F1-score 0.8472755180353031 movido para Staging.
+2025-04-19 14:13:48,223 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 52 com F1-score 0.8407350689127105 movido para Staging.
+2025-04-19 14:13:48,241 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 51 com F1-score 0.8485780169100692 movido para Staging.
+2025-04-19 14:13:48,260 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 50 com F1-score 0.8516228748068007 movido para Staging.
+2025-04-19 14:13:48,278 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 49 com F1-score 0.8465690053970701 movido para Staging.
+2025-04-19 14:13:48,297 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 48 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:13:48,316 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 47 com F1-score 0.8428351309707242 movido para Staging.
+2025-04-19 14:13:48,335 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 46 com F1-score 0.8503453568687643 movido para Staging.
+2025-04-19 14:13:48,354 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 45 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:13:48,373 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 44 com F1-score 0.8440366972477065 movido para Staging.
+2025-04-19 14:13:48,392 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 43 com F1-score 0.8448540706605223 movido para Staging.
+2025-04-19 14:13:48,411 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 42 com F1-score 0.847457627118644 movido para Staging.
+2025-04-19 14:13:48,430 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 41 com F1-score 0.8549382716049383 movido para Staging.
+2025-04-19 14:13:48,450 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 40 com F1-score 0.8498845265588915 movido para Staging.
+2025-04-19 14:13:48,469 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 39 com F1-score 0.8413793103448276 movido para Staging.
+2025-04-19 14:13:48,488 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 38 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:13:48,509 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 37 com F1-score 0.8509984639016898 movido para Staging.
+2025-04-19 14:13:48,530 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 36 com F1-score 0.8437259430331023 movido para Staging.
+2025-04-19 14:13:48,551 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 35 com F1-score 0.8421052631578947 movido para Staging.
+2025-04-19 14:13:48,571 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 34 com F1-score 0.8453292496171516 movido para Staging.
+2025-04-19 14:13:48,590 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 33 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:13:48,609 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 32 com F1-score 0.8488104374520338 movido para Staging.
+2025-04-19 14:13:48,628 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 31 com F1-score 0.850609756097561 movido para Staging.
+2025-04-19 14:13:48,647 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 30 com F1-score 0.8450920245398773 movido para Staging.
+2025-04-19 14:13:48,666 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 29 com F1-score 0.8564885496183207 movido para Staging.
+2025-04-19 14:13:48,684 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 28 com F1-score 0.8551829268292683 movido para Staging.
+2025-04-19 14:13:48,704 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 1 com F1-score 0.8551829268292683 movido para Staging.
+2025-04-19 14:13:48,723 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 2 com F1-score 0.8564885496183207 movido para Staging.
+2025-04-19 14:13:48,742 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 3 com F1-score 0.8450920245398773 movido para Staging.
+2025-04-19 14:13:48,760 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 4 com F1-score 0.850609756097561 movido para Staging.
+2025-04-19 14:13:48,779 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 5 com F1-score 0.8488104374520338 movido para Staging.
+2025-04-19 14:13:48,797 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 6 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:13:48,816 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 7 com F1-score 0.8453292496171516 movido para Staging.
+2025-04-19 14:13:48,834 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 8 com F1-score 0.8421052631578947 movido para Staging.
+2025-04-19 14:13:48,853 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 9 com F1-score 0.8437259430331023 movido para Staging.
+2025-04-19 14:13:48,871 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 10 com F1-score 0.8509984639016898 movido para Staging.
+2025-04-19 14:13:48,890 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 11 com F1-score 0.8457405986185725 movido para Staging.
+2025-04-19 14:13:48,909 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 12 com F1-score 0.8413793103448276 movido para Staging.
+2025-04-19 14:13:48,927 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 13 com F1-score 0.8498845265588915 movido para Staging.
+2025-04-19 14:13:48,945 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 14 com F1-score 0.8549382716049383 movido para Staging.
+2025-04-19 14:13:48,966 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 15 com F1-score 0.847457627118644 movido para Staging.
+2025-04-19 14:13:48,985 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 16 com F1-score 0.8448540706605223 movido para Staging.
+2025-04-19 14:13:49,005 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 17 com F1-score 0.8440366972477065 movido para Staging.
+2025-04-19 14:13:49,023 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 18 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:13:49,042 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 19 com F1-score 0.8503453568687643 movido para Staging.
+2025-04-19 14:13:49,061 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 20 com F1-score 0.8428351309707242 movido para Staging.
+2025-04-19 14:13:49,080 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 21 com F1-score 0.8433179723502304 movido para Staging.
+2025-04-19 14:13:49,099 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 22 com F1-score 0.8465690053970701 movido para Staging.
+2025-04-19 14:13:49,118 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 23 com F1-score 0.8516228748068007 movido para Staging.
+2025-04-19 14:13:49,137 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 24 com F1-score 0.8485780169100692 movido para Staging.
+2025-04-19 14:13:49,156 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 25 com F1-score 0.8407350689127105 movido para Staging.
+2025-04-19 14:13:49,175 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 26 com F1-score 0.8472755180353031 movido para Staging.
+2025-04-19 14:13:49,194 -  INFO - credit_model_promote.py - Modelo CreditCard_XGBoost versão 27 com F1-score 0.8417818740399385 movido para Staging.
+2025-04-19 14:13:49,219 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 10 com F1-score 0.8550404709345106 movido para Staging.
+2025-04-19 14:13:49,241 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 9 com F1-score 0.8518242740134029 movido para Staging.
+2025-04-19 14:13:49,261 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 8 com F1-score 0.8505917159763313 movido para Staging.
+2025-04-19 14:13:49,281 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 7 com F1-score 0.8548148148148148 movido para Staging.
+2025-04-19 14:13:49,302 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 6 com F1-score 0.8481291269258987 movido para Staging.
+2025-04-19 14:13:49,322 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 1 com F1-score 0.8481291269258987 movido para Staging.
+2025-04-19 14:13:49,341 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 2 com F1-score 0.8548148148148148 movido para Staging.
+2025-04-19 14:13:49,360 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 3 com F1-score 0.8505917159763313 movido para Staging.
+2025-04-19 14:13:49,379 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 4 com F1-score 0.8518242740134029 movido para Staging.
+2025-04-19 14:13:49,398 -  INFO - credit_model_promote.py - Modelo CreditCard_LogisticRegression versão 5 com F1-score 0.8550404709345106 movido para Staging.
+2025-04-19 14:13:49,410 -  INFO - credit_model_promote.py - Modelo CreditCard_RandomForest versão 30 agora é o campeão com F1-score de 0.859896219421794.
+2025-04-19 14:13:53,937 -  INFO - migration.py - Context impl SQLiteImpl.
+2025-04-19 14:13:53,937 -  INFO - migration.py - Will assume non-transactional DDL.
+2025-04-19 14:13:54,053 -  INFO - credit_model_serve.py - Modelo 'CreditCard_RandomForest' em produção encontrado no experimento 'CreditData_Experiments' (versão 30)
+2025-04-19 14:13:54,054 -  INFO - credit_model_serve.py - Modelo servido em http://127.0.0.1:8000/invocations
