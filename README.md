@@ -153,7 +153,7 @@ flowchart TD
         A1[▶️Iniciar MLflow]
         A2[[⚙️Treinamento, Versionamento e Armazenamento <br>src/experiments/credit_model_experiments.py]]
         A3[[📊Avaliação e Promoção do Campeão<br>src/experiments/credit_model_promote.py]]
-        A4[[🚀Implantação<br>src/serve/credit_model_serve.py]]
+        A4[[🚀Implantação<br>src/serve/<br>credit_model_serve.py]]
         A1 --> A2 --> A3 --> A4 
     end
     
