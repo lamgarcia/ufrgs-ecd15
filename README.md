@@ -151,17 +151,17 @@ flowchart TD
 
     subgraph Train [run_training_serving.py]
         A1[▶️Iniciar MLflow]
-        A2[[⚙️Treinamento, Versionamento e Armazenamento <br>src/experiments/credit_model_experiments.py]]
-        A3[[📊Avaliação e Promoção do Campeão<br>src/experiments/credit_model_promote.py]]
+        A2[[⚙️Treinamento, Versionamento e Armazenamento <br>src/experiments/<br>credit_model_experiments.py]]
+        A3[[📊Avaliação e Promoção do Campeão<br>src/experiments/<br>credit_model_promote.py]]
         A4[[🚀Implantação<br>src/serve/<br>credit_model_serve.py]]
         A1 --> A2 --> A3 --> A4 
     end
     
 
     subgraph Drift [run_simulation_drift.py]
-        B1[[🧪Simular Inferências<br>src/simulation/simulation.py]]
-        B2[[🔍Monitorar Drift<br>src/monitor/monitor_drift.py]]
-        B3[🎯Trigger de Retreinamento<br>src/triggers/retraining_trigger.py]
+        B1[[🧪Simular Inferências<br>src/simulation/<br>simulation.py]]
+        B2[[🔍Monitorar Drift<br>src/monitor/<br>monitor_drift.py]]
+        B3[🎯Trigger de Retreinamento<br>src/triggers/<br>retraining_trigger.py]
         C1{{Tem Drift?}}
         B1 --> B2 
         B3 --> C1 --> A2
@@ -170,7 +170,7 @@ flowchart TD
 
     S1[/API - Modelo em Produção/]
     D1[(📦Dataset<br> raw/credit_data.csv)] 
-    D2[(📦Dataset simulado<br>inferences/credit_data_inferences_log.csv)]
+    D2[(📦Dataset simulado<br>inferences/<br>credit_data_inferences_log.csv)]
     D3[(📄Reports de Drifts<br> reports/)]
     D4[(🛢️mlflow.db)]
     D5[(📄config_pipeline.json)]
